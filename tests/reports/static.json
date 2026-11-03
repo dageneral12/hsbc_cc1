@@ -1,0 +1,191 @@
+{
+ "suite": "static",
+ "counts": {
+  "PASS": 36,
+  "FAIL": 0,
+  "WARN": 0,
+  "SKIP": 0
+ },
+ "rows": [
+  {
+   "status": "PASS",
+   "id": "lint hsbc-customer-communication.bpmn",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-customer-communication.bpmn calledDecision CustomerResponseType",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "registry hsbc-customer-communication.bpmn job type io.camunda.agenticai:aiagent:1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-customer-communication.bpmn formId hsbc-mentor-approval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-customer-communication.bpmn calledDecision MentorApprovalDecision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "registry hsbc-customer-communication.bpmn job type io.camunda:email:1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "lint hsbc-decline-fraud-alert.bpmn",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-decline-fraud-alert.bpmn calledElement HSBC_Customer_Communication",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-decline-fraud-alert.bpmn formId hsbc-fraud-chase",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "registry hsbc-decline-fraud-alert.bpmn job type io.camunda.agenticai:aiagent:1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-decline-fraud-alert.bpmn calledDecision FraudManagementOutcome",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-decline-fraud-alert.bpmn formId hsbc-fraud-response-review",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-decline-fraud-alert.bpmn calledElement HSBC_Customer_Communication",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "lint hsbc-decline-incorrect-cvv.bpmn",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-decline-incorrect-cvv.bpmn calledElement HSBC_Customer_Communication",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "lint hsbc-declined-transaction-triage.bpmn",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "registry hsbc-declined-transaction-triage.bpmn  job type (expression)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-declined-transaction-triage.bpmn linkedResource RPA_hsbcInlineImages",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-declined-transaction-triage.bpmn calledElement HSBC_Transaction_Triage_Agent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-declined-transaction-triage.bpmn calledElement HSBC_Customer_Communication",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-declined-transaction-triage.bpmn calledElement HSBC_Decline_Incorrect_CVV",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-declined-transaction-triage.bpmn calledElement HSBC_Decline_Fraud_Alert",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-declined-transaction-triage.bpmn formId hsbc-escalation-review",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-declined-transaction-triage.bpmn formId hsbc-locate-record",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "lint hsbc-transaction-triage-agent.bpmn",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "registry hsbc-transaction-triage-agent.bpmn job type io.camunda.agenticai:aiagent-job-worker:1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "registry hsbc-transaction-triage-agent.bpmn  job type (expression)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-transaction-triage-agent.bpmn linkedResource RPA_1sctslp",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "registry hsbc-transaction-triage-agent.bpmn  job type (expression)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-transaction-triage-agent.bpmn linkedResource RPA_09aoltb",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "registry hsbc-transaction-triage-agent.bpmn  job type (expression)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-transaction-triage-agent.bpmn linkedResource RPA_0daw5hw",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-transaction-triage-agent.bpmn calledDecision RequiredTriageFields",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-transaction-triage-agent.bpmn calledDecision DeclineReasonToScenario",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-transaction-triage-agent.bpmn calledDecision TriageRouting",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ref hsbc-transaction-triage-agent.bpmn calledDecision RecordNotFoundAction",
+   "msg": ""
+  }
+ ]
+}

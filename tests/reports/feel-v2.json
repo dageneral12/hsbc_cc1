@@ -1,0 +1,391 @@
+{
+ "suite": "feel-v2",
+ "counts": {
+  "PASS": 76,
+  "FAIL": 0,
+  "WARN": 0,
+  "SKIP": 0
+ },
+ "rows": [
+  {
+   "status": "PASS",
+   "id": "pci 'Case ID: HSBC-AGT-20261030170156535-1 an'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "pci 'card 5550 4100 9901 8801'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "pci 'card 5550-4100-9901-8801'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "pci 'a 19-digit account 1234567890123456789 h'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "pci 'line one\\n5550410099018801\\nline three'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "pci 'card ending 8801, AED 2,150.00 on 22/06/'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "pci 'call +971 4 123 4567 about the card endi'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "pci 'Dear Jasmin,\\n\\nHSBC Commercial Cards Serv'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "pci null body",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "pci blank body",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "subject tag SENDER",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "subject tag AUTHORISED_CONTACT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "subject tag FRAUD_TEAM",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "subject: v12 tags never produced",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud tag maps back to requestRef",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "intake: two cards -> two requests -CASE-1/-2 with masked numbers",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "intake: duplicates merged (same last four, date, amount)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "intake: unparsed extraction -> requestCount null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "intake: empty contact list -> senderAuthorised null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "intake: other sender -> senderAuthorised false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "intake: no DQM result -> rpaStatus null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "intake: a request without identifiers is never merged",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "investigate prepare: S4 inputs",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "investigate prepare: cap reached -> refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "investigate prepare: no inputs at all",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: the nine tool copies are identical",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: post-agent copy = tool copy with agent.context and the audit part only",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: fresh case has zero counters and the step call",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: S4 after the advice email",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: cancelled wait is not a result, reply event after the last email is unanswered, current step lists both calls",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: an answer after the reply clears unansweredReply",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: accepted CloseCase closes the case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: a customer event after the accepted close re-opens it (late reply)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: clarification then timed-out wait",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: Mentor rework counted, escalation open until HandToTeam returns",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: HandToTeam closes the escalation and gives the team decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: fraud initial sent and the wait timed out (a chase is possible)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: reply, interpretation needing review, human review decides",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: a newer fraud reply makes the earlier interpretation stale",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "ledger: post-agent copy returns the same facts and an ordered audit",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "hold gate: both calls pending at the start of the step",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "hold gate: a finished tool of the step (toolCallResults) is no longer pending",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "hold gate: results already in the context are not pending; no toolCallResults variable is tolerated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "hold gate condition: busy tool (user task) holds the event",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "hold gate condition: only pure waits release the event",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "hold gate condition: nothing pending releases the event",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "hold gate condition: holdGate=false releases at once",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "hold gate condition: the replyHoldMax bound releases a long hold",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "EmailCustomer guard: clean body passes",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "EmailCustomer guard: card number in the body is refused (digits with spaces)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "EmailCustomer guard: empty body is refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "EmailCustomer guard: unknown purpose is refused (enum values are not enforced by the model API)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "EmailCustomer guard: two EmailCustomer calls in one step: refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "EmailCustomer guard: identical body already sent: refused (idempotency)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "EmailCustomer guard: bodyKey is length|first 80 characters, as stored in SENT results",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AwaitCustomerReply guard: after a SENT email, alone in the step: allowed",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AwaitCustomerReply guard: last email not sent: refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AwaitCustomerReply guard: with a non-wait tool in the same step: refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AwaitCustomerReply guard: closed case: refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AwaitCustomerReply guard: unknown phase: refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AwaitCustomerReply guard: timer from the process (conversationWindow), never from the model",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AskFraudTeam guard: INITIAL for a fraud scenario: allowed",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AskFraudTeam guard: not a fraud scenario: refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AskFraudTeam guard: second INITIAL: refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AskFraudTeam guard: CHASE before a timed-out wait: refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AskFraudTeam guard: CHASE after a timeout: allowed",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "AskFraudTeam guard: CHASE over the cap (maxFraudChases from the process): refused",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "reply merge: sender verified, quoted history stripped, address normalised",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "reply merge: a DQM authorised contact is verified",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "reply merge: an unknown address is unverified (content goes to a person)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "reply merge: demo-redirect mode verifies any sender (as v12)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "reply merge: text truncated to 4,000 characters",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "event message: verified reply carries text, empty transcript and the tag",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "event message: unverified reply withholds the content",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "late reply: a reply received before the close is a replay: ignored",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "late reply: a reply after the close is new",
+   "msg": ""
+  }
+ ]
+}

@@ -1,0 +1,711 @@
+{
+ "suite": "dmn",
+ "counts": {
+  "PASS": 140,
+  "FAIL": 0,
+  "WARN": 0,
+  "SKIP": 0
+ },
+ "rows": [
+  {
+   "status": "PASS",
+   "id": "deployed CustomerResponseType",
+   "msg": "latest version 1"
+  },
+  {
+   "status": "PASS",
+   "id": "deployed DeclineReasonToScenario",
+   "msg": "latest version 1"
+  },
+  {
+   "status": "PASS",
+   "id": "deployed FraudManagementOutcome",
+   "msg": "latest version 1"
+  },
+  {
+   "status": "PASS",
+   "id": "deployed MentorApprovalDecision",
+   "msg": "latest version 1"
+  },
+  {
+   "status": "PASS",
+   "id": "deployed RecordNotFoundAction",
+   "msg": "latest version 1"
+  },
+  {
+   "status": "PASS",
+   "id": "deployed RequiredTriageFields",
+   "msg": "latest version 1"
+  },
+  {
+   "status": "PASS",
+   "id": "deployed TriageRouting",
+   "msg": "latest version 1"
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r1 rpaStatus ERROR",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r1 rpaStatus null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r2 CLIENT_NOT_FOUND",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r2 CUSTOMER_NOT_FOUND",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r3 clientFound false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r3 clientFound null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r4 senderAuthorised null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r5 senderAuthorised false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r6 cardNumberLength null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r7 no card number",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r8 15 digits",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r8 17 digits",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r9 missingFieldCount null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r10 missing fields",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r11 S3 card not under client",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r12 record not found (eChamps)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r12 record not found, card not found",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r13 cardFound null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r14 INCORRECT_CVV",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r15 FRAUD_ALERT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r16 OUT_OF_SCOPE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r17 UNKNOWN scenario",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r17 null scenario",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r17 unrecognised scenario",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: regression CVV recordNotFound=false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: regression CVV recordNotFound=null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: regression FRAUD recordNotFound=false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: regression FRAUD recordNotFound=null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: S3 beats not-found (cardFound=false + recordNotFound)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: S3 beats not-found (eChamps reason)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: unauthorised beats missing card number",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: RPA error beats everything",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r6 two requests",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: r6 three requests, missing card",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: single request unchanged",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: requestCount null unchanged",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: unauthorised beats multi-request",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: every rule has a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r1 0076 raw",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r1 0076 plain",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r1 0076 with spaces",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r2 0713 raw",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r2 0713 plain",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r3 null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r3 empty",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r3 blank",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r4 other code",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r4 short code",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r4 no digits",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: r4 look-alike 0760",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: every rule has a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: none missing",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: date null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: date empty",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: date blank (trimmed)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: amount null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: amount zero",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: amount negative",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: merchant null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: merchant blank (trimmed)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: all missing, rule order",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: date + merchant missing",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: every rule has a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r1 already asked once",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r1 asked twice",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r1 priorFollowUps null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r2 customer not found, first attempt",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r2 customer not found, details incomplete",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r3 client not found (system mismatch)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r3 client not found, details incomplete",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r4 detailsComplete null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r5 details incomplete",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r6 no matching authorisation",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r7 card not found",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r8 reason null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r8 reason unrecognised",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: r8 CARD_NOT_UNDER_CLIENT (S3 reason)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: every rule has a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r1 MISSING_CARD_DETAILS",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r2 INVALID_CARD_NUMBER",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r3 MISSING_REQUIRED_DATA",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r4 CARD_COMPANY_MISMATCH",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r5 UNAUTHORISED_SENDER",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r6 CVV_RETRY_ADVICE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r7 FRAUD_TEAM_REVIEW_REQUEST",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r8 FRAUD_OUTCOME_BLOCK_REMOVED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r9 FRAUD_OUTCOME_KEEP_BLOCK",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r10 REQUEST_COMPLETE_DETAILS",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r11 unknown purpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r11 null purpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: r11 lower-case purpose is not matched",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: every rule has a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r1 UNCLEAR",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r1 MORE_INFO_REQUIRED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r2 low confidence 0.79",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r2 confidence null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r2 confidence 0",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r3 BLOCK_REMOVED 0.8 boundary",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r3 BLOCK_REMOVED 1.0",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r4 KEEP_BLOCK_REISSUE 0.9",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r5 decision null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r5 decision unrecognised",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r5 decision lower case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: r5 both null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: every rule has a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r1 APPROVE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r1 APPROVE ignores rework counters",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r2 REWORK, reworkCount null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r3 REWORK, maxRework null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r4 REWORK 0 of 3",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r4 REWORK 2 of 3",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r5 REWORK at limit",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r5 REWORK over limit",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r6 REJECT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r7 ESCALATE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r8 null decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r8 unknown decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r8 lower-case approve is not APPROVE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: r8 empty decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: every rule has a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting invariant :: rpaStatus=null escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting invariant :: clientFound=null escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting invariant :: senderAuthorised=null escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting invariant :: cardNumberLength=null escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting invariant :: missingFieldCount=null escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting invariant :: cardFound=null escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting invariant :: scenario=null escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting invariant :: CVV/FRAUD routes need rpaStatus OK + client found + sender authorised + card found (405 combinations)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting invariant :: rule-17 regression (recordNotFound false/null never RECORD_NOT_FOUND)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision invariant :: SEND only on APPROVE, REDRAFT only within budget, anything unknown escalates (100 combinations)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction invariant :: never emails twice, never emails on a system mismatch, null escalates (72 combinations)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome invariant :: automatic only for a decisive reading with confidence >= 0.8 (49 combinations)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType invariant :: every customer-facing purpose needs Mentor approval; unsupported purposes escalate",
+   "msg": ""
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "suite": "dmn-v2-offline",
+ "counts": {
+  "PASS": 6,
+  "FAIL": 0,
+  "WARN": 0,
+  "SKIP": 4
+ },
+ "rows": [
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: 11 rules, 22 cases, inputs ['lastAwaitTimedOut', 'lastEmailWasClarification', 'latestScenario', 'outcome', 'resolvingEmailSent', 'teamDecision', 'unansweredReply']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: 22 rules, 43 cases, inputs ['clarificationsSent', 'closeAccepted', 'emailsSent', 'fraudReviewed', 'fraudTeamDecision', 'latestRecommendedRoute', 'latestScenario', 'maxClarifications', 'maxCustomerEmails', 'maxMentorReworks', 'mentorEscalationOpen', 'mentorReworks', 'needsHumanReview', 'purpose', 'teamDecision']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: 15 rules, 17 cases, inputs ['communicationPurpose']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "SKIP",
+   "id": "DeclineReasonToScenario",
+   "msg": "unchanged v12 decision (byte-identical copy), covered by tests/dmn"
+  },
+  {
+   "status": "SKIP",
+   "id": "FraudManagementOutcome",
+   "msg": "unchanged v12 decision (byte-identical copy), covered by tests/dmn"
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: 12 rules, 28 cases, inputs ['customerFound', 'extractionParsed', 'maxRequestsPerEmail', 'multiRequestMode', 'notFoundReason', 'requestCount', 'rpaStatus', 'senderAuthorised', 'splitConfidence']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: 10 rules, 25 cases, inputs ['draftSource', 'maxRework', 'mentorDecision', 'reworkCount']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "SKIP",
+   "id": "RecordNotFoundAction",
+   "msg": "unchanged v12 decision (byte-identical copy), covered by tests/dmn"
+  },
+  {
+   "status": "SKIP",
+   "id": "RequiredTriageFields",
+   "msg": "unchanged v12 decision (byte-identical copy), covered by tests/dmn"
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: 18 rules, 38 cases, inputs ['cardFound', 'cardNumberLength', 'clientFound', 'declineReasonCode', 'missingFieldCount', 'notFoundReason', 'recordNotFound', 'requestCount', 'rpaStatus', 'scenario', 'senderAuthorised']",
+   "msg": "all rules have a case"
+  }
+ ]
+}

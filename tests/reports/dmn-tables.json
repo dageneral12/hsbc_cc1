@@ -1,0 +1,46 @@
+{
+ "suite": "dmn-tables",
+ "counts": {
+  "PASS": 7,
+  "FAIL": 0,
+  "WARN": 0,
+  "SKIP": 0
+ },
+ "rows": [
+  {
+   "status": "PASS",
+   "id": "CustomerResponseType :: 11 rules, 13 cases, inputs ['communicationPurpose']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "PASS",
+   "id": "DeclineReasonToScenario :: 4 rules, 12 cases, inputs ['declineReasonCode']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "PASS",
+   "id": "FraudManagementOutcome :: 5 rules, 12 cases, inputs ['fraudTeamDecision', 'interpretationConfidence']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecision :: 8 rules, 14 cases, inputs ['maxRework', 'mentorDecision', 'reworkCount']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "PASS",
+   "id": "RecordNotFoundAction :: 8 rules, 14 cases, inputs ['detailsComplete', 'lookupAttempts', 'notFoundReason', 'priorFollowUps']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "PASS",
+   "id": "RequiredTriageFields :: 3 rules, 11 cases, inputs ['merchantName', 'transactionAmount', 'transactionDate']",
+   "msg": "all rules have a case"
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRouting :: 18 rules, 37 cases, inputs ['cardFound', 'cardNumberLength', 'clientFound', 'declineReasonCode', 'missingFieldCount', 'notFoundReason', 'recordNotFound', 'requestCount', 'rpaStatus', 'scenario', 'senderAuthorised']",
+   "msg": "all rules have a case"
+  }
+ ]
+}

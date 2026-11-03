@@ -1,0 +1,921 @@
+{
+ "suite": "dmn-v2",
+ "counts": {
+  "PASS": 182,
+  "FAIL": 0,
+  "WARN": 0,
+  "SKIP": 0
+ },
+ "rows": [
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r1 rpaStatus ERROR",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r1 rpaStatus null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r1 beats everything",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r2 customer not found",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r2 beats unauthorised",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r3 customerFound null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r4 senderAuthorised null (no contact list)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r5 unauthorised sender",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r5 unauthorised beats unparsed extraction",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r5 unauthorised beats several requests",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r6 extraction not parsed",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r6 extractionParsed null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r7 requestCount null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r7 requestCount negative",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r8 no request in the email",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r9 two requests, ESCALATE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r9 two requests, mode null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r9 two requests, unknown mode",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r9 five requests, ESCALATE (cap not reached, mode decides)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r10 SPLIT, more than the cap",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r11 SPLIT, low confidence",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r11 SPLIT, null confidence",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r12 SPLIT, two requests, confident",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r12 SPLIT, confidence exactly 0.7",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r12 SPLIT, exactly the cap",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r12 single request",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r12 single request, null splitConfidence (deviation from design row 8)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: r12 single request, low splitConfidence (deviation from design row 8)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "IntakeRouting :: every rule matched by a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r1 case already closed",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r1 beats the escalation guard",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r2 Mentor escalation open",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r3 emailsSent null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r4 mentorReworks null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r5 email cap reached",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r5 email cap beats a status update",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: one below the email cap is allowed",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r6 rework cap reached",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r7 clarificationsSent null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r8 clarification cap reached",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r8 cap applies to every clarification purpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r9 MISSING_CARD_DETAILS matches route",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r10 INVALID_CARD_NUMBER matches route",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r11 MISSING_REQUIRED_DATA matches route",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r12 CARD_COMPANY_MISMATCH matches route",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r13 REQUEST_COMPLETE_DETAILS matches route",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r14 no investigation yet, missing card",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r14 no investigation yet, invalid card",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r14 no investigation yet, missing data",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: no investigation yet: CARD_COMPANY_MISMATCH is not allowed",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: clarification purpose that does not match the route",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: clarification purpose when the route is a CVV decline",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r15 CVV advice after an incorrect-CVV decline",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: CVV advice when the scenario is fraud",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: CVV advice before any investigation",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r16 block removed, no review pending",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r17 block removed after review",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r18 block stays, no review pending",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r19 block stays after review",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: fraud outcome while review is pending and not done",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: fraud outcome with unknown review state",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: block-removed email when the fraud team kept the block",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: block-stays email when the fraud team removed the block",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: fraud outcome with no fraud decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r20 hand-over update after a team decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: hand-over update without a team decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r21 status update",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r21 answer to a question",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r22 unknown purpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r22 null purpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r22 lower-case purpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: r22 UNAUTHORISED_SENDER is not an agent purpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy :: every rule matched by a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r1 RESOLVED with an unanswered reply",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r1 beats a resolving email",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r2 RESOLVED after a sent resolving email",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r2 unansweredReply null counts as none",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r3 RESOLVED by the team",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r3 resolvingEmailSent null, team resolved",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r4 RESOLVED with no evidence",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r4 RESOLVED, team returned to agent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r4 RESOLVED, facts absent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r5 CLOSED_NO_RESPONSE after a timed-out clarification",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r6 CLOSED_NO_RESPONSE, last email was not a clarification",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r6 CLOSED_NO_RESPONSE, wait did not time out",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r6 CLOSED_NO_RESPONSE, facts absent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r7 OUT_OF_SCOPE with the decline scenario and a team decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r8 OUT_OF_SCOPE without a team decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r8 OUT_OF_SCOPE for a CVV decline",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r9 ESCALATED after the team closed it",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r10 ESCALATED without a team decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r10 ESCALATED, team resolved instead",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r11 unknown outcome",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r11 null outcome",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: r11 lower-case outcome",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation :: every rule matched by a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r1 rpaStatus ERROR",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r1 rpaStatus null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r2 CLIENT_NOT_FOUND",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r2 CUSTOMER_NOT_FOUND",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r3 clientFound false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r3 clientFound null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r4 senderAuthorised null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r5 senderAuthorised false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r6 cardNumberLength null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r7 no card number",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r8 15 digits",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r8 17 digits",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r9 missingFieldCount null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r10 missing fields",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r11 S3 card not under client",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r12 record not found (eChamps)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r12 record not found, card not found",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r13 cardFound null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r14 INCORRECT_CVV",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r15 FRAUD_ALERT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r16 OUT_OF_SCOPE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r17 UNKNOWN scenario",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r17 null scenario",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r17 unrecognised scenario",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: regression CVV recordNotFound=false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: regression CVV recordNotFound=null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: regression FRAUD recordNotFound=false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: regression FRAUD recordNotFound=null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: S3 beats not-found (cardFound=false + recordNotFound)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: S3 beats not-found (eChamps reason)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: unauthorised beats missing card number",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: RPA error beats everything",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r6 two requests",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r6 three requests, missing card",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: single request unchanged",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: requestCount null unchanged",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: unauthorised beats multi-request",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: r6 reworded reason (a reply introduced another card)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "TriageRoutingV2 :: every rule matched by a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r1 MISSING_CARD_DETAILS",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r2 INVALID_CARD_NUMBER",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r3 MISSING_REQUIRED_DATA",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r4 CARD_COMPANY_MISMATCH",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r5 UNAUTHORISED_SENDER",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r6 CVV_RETRY_ADVICE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r7 FRAUD_TEAM_REVIEW_REQUEST",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r8 FRAUD_OUTCOME_BLOCK_REMOVED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r9 FRAUD_OUTCOME_KEEP_BLOCK",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r10 REQUEST_COMPLETE_DETAILS",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r11 unknown purpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r11 null purpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r11 lower-case purpose is not matched",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r11 STATUS_UPDATE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r12 ANSWER_QUESTION",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r13 HUMAN_ACTION_UPDATE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: r14 FRAUD_TEAM_CHASE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerResponseTypeV2 :: every rule matched by a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r1 APPROVE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r1 APPROVE ignores rework counters",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r2 REWORK, reworkCount null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r3 REWORK, maxRework null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r4 REWORK 0 of 3",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r4 REWORK 2 of 3",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r5 REWORK at limit",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r5 REWORK over limit",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r6 REJECT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r7 ESCALATE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r8 null decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r8 unknown decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r8 lower-case approve is not APPROVE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r8 empty decision",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r1 APPROVE in AGENT mode",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r2 REWORK in AGENT mode returns to the agent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r2 REWORK in AGENT mode ignores the counters",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r2 REWORK in AGENT mode beyond the cap",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r3 REJECT in AGENT mode returns to the agent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r9 ESCALATE in AGENT mode still escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r10 unknown decision in AGENT mode escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: r10 null decision in AGENT mode escalates",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: REWORK with draftSource null keeps v12 behaviour",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: REWORK with a lower-case agent is not AGENT mode",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: REJECT in MODEL mode still cancels",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 :: every rule matched by a case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "MentorApprovalDecisionV2 invariant :: SEND only on APPROVE; AGENT REWORK/REJECT always return to the agent; RETURN_TO_CALLER only in AGENT mode",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CustomerEmailPolicy invariant :: nothing is allowed after closure or while a Mentor escalation is open",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "CaseCloseValidation invariant :: unknown outcome refused, accepted closeStatus = outcome, RESOLVED refused while a reply is unanswered",
+   "msg": ""
+  }
+ ]
+}

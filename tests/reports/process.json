@@ -1,0 +1,1351 @@
+{
+ "suite": "process",
+ "counts": {
+  "PASS": 263,
+  "FAIL": 0,
+  "WARN": 5,
+  "SKIP": 0
+ },
+ "rows": [
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: caseStatus = \"WAITING_FOR_CUSTOMER\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: caseStatus = \"WAITING_FOR_CUSTOMER\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/INVALID_CARD_NUMBER/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: caseStatus = \"WAITING_FOR_CUSTOMER\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_REQUIRED_DATA/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: caseStatus = \"WAITING_FOR_CUSTOMER\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CARD_COMPANY_MISMATCH/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: caseStatus = \"WAITING_FOR_CUSTOMER\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNAUTHORISED_SENDER/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: caseStatus = \"RESOLVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/CVV_RETRY_ADVICE/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: caseStatus = \"WAITING_FOR_FRAUD_TEAM\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "WARN",
+   "id": "comm/FRAUD_TEAM_REVIEW_REQUEST/APPROVE :: note",
+   "msg": "UserTask_MentorApproval not reached"
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: caseStatus = \"RESOLVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_BLOCK_REMOVED/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: caseStatus = \"RESOLVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/FRAUD_OUTCOME_KEEP_BLOCK/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: did not reach End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: did not reach End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: did not reach End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: caseStatus = \"WAITING_FOR_CUSTOMER\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/REQUEST_COMPLETE_DETAILS/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: reached End_UnsupportedPurpose",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: did not reach End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: did not reach UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: did not reach Task_SendEmail",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: communicationSent = false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: communicationOutcome = \"ESCALATED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: caseStatus = \"ESCALATED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: audit COMMUNICATION_UNSUPPORTED_PURPOSE x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/UNSUPPORTED_PURPOSE :: audit has no COMMUNICATION_SENT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_then_APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_then_APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_then_APPROVE :: reached Task_IncrementRework",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_then_APPROVE :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_then_APPROVE :: reworkCount = 1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_then_APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_then_APPROVE :: audit MENTOR_REWORK_REQUESTED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_then_APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: reached End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: did not reach End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: did not reach Task_SendEmail",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: communicationSent = false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: communicationOutcome = \"ESCALATED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: caseStatus = \"ESCALATED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: audit COMMUNICATION_ESCALATED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REWORK_budget_exhausted :: audit has no COMMUNICATION_SENT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: reached End_Cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: did not reach End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: did not reach Task_SendEmail",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: communicationSent = false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: communicationOutcome = \"CANCELLED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: caseStatus = \"ESCALATED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: audit COMMUNICATION_CANCELLED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/REJECT :: audit has no COMMUNICATION_SENT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/ESCALATE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/ESCALATE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/ESCALATE :: reached End_Escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/ESCALATE :: did not reach End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/ESCALATE :: did not reach Task_SendEmail",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/ESCALATE :: communicationSent = false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/ESCALATE :: communicationOutcome = \"ESCALATED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/ESCALATE :: audit COMMUNICATION_ESCALATED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MISSING_CARD_DETAILS/ESCALATE :: audit has no COMMUNICATION_SENT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MENTOR_SLA_flag :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MENTOR_SLA_flag :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MENTOR_SLA_flag :: reached Timer_MentorSla",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MENTOR_SLA_flag :: reached Task_FlagMentorSlaBreach",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MENTOR_SLA_flag :: reached End_Sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MENTOR_SLA_flag :: audit MENTOR_SLA_AT_RISK x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "comm/MENTOR_SLA_flag :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: reached Task_RecordCvvEvidence",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: reached CallActivity_CvvAdvice",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: reached End_CvvHandled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: caseStatus = \"RESOLVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: communicationOutcome = \"SENT\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: audit CVV_EVIDENCE_RECORDED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: audit COMMUNICATION_SENT x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/APPROVE :: audit COMMUNICATION_SENT mentions 'nikita.tihhomirov@camunda.com'",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/REJECT :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/REJECT :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/REJECT :: reached End_CvvHandled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/REJECT :: caseStatus = \"ESCALATED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/REJECT :: communicationSent = false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/REJECT :: communicationOutcome = \"CANCELLED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/REJECT :: audit CVV_EVIDENCE_RECORDED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/REJECT :: audit COMMUNICATION_CANCELLED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "cvv/REJECT :: audit has no COMMUNICATION_SENT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: published hsbc-fraud-team-response while Gateway_AwaitFraudTeam was active",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: reached Task_RecordFraudEvidence",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: reached CallActivity_NotifyFraudTeam",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: reached Catch_FraudTeamResponse",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: reached Task_InterpretFraudReply",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: reached BRT_FraudManagementOutcome",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: reached CallActivity_FraudOutcomeToCustomer",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: reached End_FraudCaseHandled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: fraudTeamDecision = \"BLOCK_REMOVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: caseStatus = \"RESOLVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: audit FRAUD_EVIDENCE_RECORDED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/BLOCK_REMOVED :: audit COMMUNICATION_SENT x2",
+   "msg": ""
+  },
+  {
+   "status": "WARN",
+   "id": "fraud/BLOCK_REMOVED :: note",
+   "msg": "UserTask_ReviewFraudResponse not reached"
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: published hsbc-fraud-team-response while Gateway_AwaitFraudTeam was active",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: reached Task_RecordFraudEvidence",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: reached CallActivity_NotifyFraudTeam",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: reached Catch_FraudTeamResponse",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: reached Task_InterpretFraudReply",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: reached BRT_FraudManagementOutcome",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: reached CallActivity_FraudOutcomeToCustomer",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: reached End_FraudCaseHandled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: fraudTeamDecision = \"KEEP_BLOCK_REISSUE\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: caseStatus = \"RESOLVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: audit FRAUD_EVIDENCE_RECORDED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: audit COMMUNICATION_SENT x2",
+   "msg": ""
+  },
+  {
+   "status": "WARN",
+   "id": "fraud/KEEP_BLOCK_REISSUE :: note",
+   "msg": "UserTask_ReviewFraudResponse not reached"
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: published hsbc-fraud-team-response while Gateway_AwaitFraudTeam was active",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: reached Task_RecordFraudEvidence",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: reached CallActivity_NotifyFraudTeam",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: reached Catch_FraudTeamResponse",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: reached Task_InterpretFraudReply",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: reached BRT_FraudManagementOutcome",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: reached CallActivity_FraudOutcomeToCustomer",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: reached End_FraudCaseHandled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: reached UserTask_ReviewFraudResponse",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: fraudTeamDecision = \"KEEP_BLOCK_REISSUE\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: caseStatus = \"RESOLVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: audit FRAUD_EVIDENCE_RECORDED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: audit COMMUNICATION_SENT x2",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: audit FRAUD_REPLY_REVIEWED x1",
+   "msg": ""
+  },
+  {
+   "status": "WARN",
+   "id": "fraud/AMBIGUOUS_reply_human_review :: note",
+   "msg": "UserTask_ReviewFraudResponse reached"
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: published hsbc-fraud-team-response while Gateway_AwaitFraudTeam was active",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: state COMPLETED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: no incidents",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached Task_RecordFraudEvidence",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached CallActivity_NotifyFraudTeam",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached Catch_FraudTeamResponse",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached Task_InterpretFraudReply",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached BRT_FraudManagementOutcome",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached CallActivity_FraudOutcomeToCustomer",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached UserTask_MentorApproval",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached End_FraudCaseHandled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached Timer_FraudTeamSla",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: reached UserTask_ChaseFraudTeam",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: fraudTeamDecision = \"BLOCK_REMOVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: caseStatus = \"RESOLVED\"",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: communicationSent = true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: audit FRAUD_EVIDENCE_RECORDED x1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: audit COMMUNICATION_SENT x2",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "fraud/CHASE_then_reply :: audit FRAUD_TEAM_CHASED x1",
+   "msg": ""
+  },
+  {
+   "status": "WARN",
+   "id": "fraud/CHASE_then_reply :: note",
+   "msg": "UserTask_ReviewFraudResponse not reached"
+  }
+ ]
+}

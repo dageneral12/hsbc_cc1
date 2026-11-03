@@ -1,0 +1,553 @@
+{
+  "_comment": "Expected values come from the simulator bundle (htmlPages/HSBC CCS System Simulator-fraud_files/index-D4W0HAeu.js) and docs/inventory/html-pages-inventory.md. A list value means 'any of'; {\"$contains\": x} means substring; '$notnull' means present. requiredSimulatorScenario: any | S2 | S6 (eChamps auths follow the scenario selected on the simulator home page; DQM and MiVision are scenario independent). 'steps' = a chain: '$<target>.<field>' in an input takes that field from an earlier step's result. By default the runner passes requiredSimulatorScenario as the bot input simulatorScenario (demo-only plumbing: the bot selects the scenario in the simulator UI); expected evidence.simulatorScenario.selected is then asserted.",
+  "cases": [
+    {
+      "name": "dqm_found_by_sender_email",
+      "target": "dqm",
+      "requiredSimulatorScenario": "any",
+      "source": "bundle: DQM clients[BKT001].authorisedContacts (External Contacts table on the case email page) and case list; sender jasmin@burjkhalifahtravel.ae is the From of several cases",
+      "input": {
+        "senderEmail": "jasmin@burjkhalifahtravel.ae"
+      },
+      "expected": {
+        "status": "FOUND",
+        "recordFound": true,
+        "notFoundParameter": null,
+        "notFoundMessage": null,
+        "clientId": "BKT001",
+        "clientName": "BURJ KHALIFAH TRAVEL LLC",
+        "cin": "DXB 14",
+        "accountNumbers": [
+          "1100-000000-X1741"
+        ],
+        "customerNumber": null,
+        "programNumber": null,
+        "senderIsAuthorisedContact": true,
+        "authorisedContacts": [
+          {
+            "name": "Jasmin Al Rashid",
+            "email": "jasmin@burjkhalifahtravel.ae",
+            "jobTitle": "Programme Administrator",
+            "role": "Primary PoC",
+            "isPrimary": true,
+            "secondaryRole": ""
+          },
+          {
+            "name": "Sara Al Hashimi",
+            "email": "sara@burjkhalifahtravel.ae",
+            "jobTitle": "Procurement Lead",
+            "role": "Secondary PoC",
+            "isPrimary": false,
+            "secondaryRole": ""
+          },
+          {
+            "name": "Khalid Mansour",
+            "email": "khalid@burjkhalifahtravel.ae",
+            "jobTitle": "Finance Manager",
+            "role": "Authorised Signatory",
+            "isPrimary": false,
+            "secondaryRole": ""
+          },
+          {
+            "name": "Fatima Al Zaabi",
+            "email": "fatima@burjkhalifahtravel.ae",
+            "jobTitle": "Operations Manager",
+            "role": "Secondary PoC",
+            "isPrimary": false,
+            "secondaryRole": "Authorised Signatory"
+          },
+          {
+            "name": "Rashid Al Nuaimi",
+            "email": "rashid@burjkhalifahtravel.ae",
+            "jobTitle": "IT Administrator",
+            "role": "Secondary PoC",
+            "isPrimary": false,
+            "secondaryRole": ""
+          }
+        ],
+        "searchedWith": {
+          "senderEmail": "jasmin@burjkhalifahtravel.ae"
+        }
+      },
+      "expectPagesVisited": [
+        "/dqm/login",
+        "/dqm/cases"
+      ],
+      "expectScreenshots": [
+        "dqm-external-contacts"
+      ]
+    },
+    {
+      "name": "dqm_unknown_sender_email",
+      "target": "dqm",
+      "requiredSimulatorScenario": "any",
+      "source": "no DQM case or contact has this address",
+      "input": {
+        "senderEmail": "nobody@zzyzx.example"
+      },
+      "expected": {
+        "status": "NOT_FOUND",
+        "recordFound": false,
+        "notFoundParameter": "customer",
+        "notFoundReason": "CUSTOMER_NOT_FOUND",
+        "notFoundMessage": {
+          "$contains": "nobody@zzyzx.example"
+        },
+        "clientId": null,
+        "authorisedContacts": [],
+        "senderIsAuthorisedContact": null
+      }
+    },
+    {
+      "name": "mivision_found_by_client_name_3821",
+      "target": "mivision",
+      "requiredSimulatorScenario": "any",
+      "source": "bundle clients[BKT001] (customerNumber 088134520, clientName, aliases) and card S2/3821; MiVision search filters on clientName, customerNumber and searchAliases only (not the client id) (holder Emma Carter in the newest bundle, Stefan Andriessen in older saved DOMs)",
+      "input": {
+        "clientName": "BURJ KHALIFAH TRAVEL LLC",
+        "clientId": "BKT001",
+        "cardFirstEight": "55504100",
+        "cardLastFour": "3821"
+      },
+      "expected": {
+        "status": "FOUND",
+        "recordFound": true,
+        "notFoundParameter": null,
+        "notFoundMessage": null,
+        "notFoundReason": null,
+        "clientFound": true,
+        "clientId": "BKT001",
+        "clientName": "BURJ KHALIFAH TRAVEL LLC",
+        "customerNumber": "088134520/BKTLME088134520",
+        "programName": "BURJ KHALIFAH — UAE Corporate",
+        "programNumber": "0000110000000031741",
+        "accountNumber": "0000110000000031741",
+        "senderAuthorised": null,
+        "authorisedContacts": [
+          {
+            "name": "Jasmin Al Rashid"
+          },
+          {
+            "name": "Khalid Mansour"
+          },
+          {
+            "name": "Sara Al Hashimi"
+          }
+        ],
+        "cardFound": true,
+        "maskedCardNumber": "5550-4100-XXXX-3821",
+        "cardholderName": "Emma Carter",
+        "productType": "UAE Purchasing",
+        "cardForm": "PHYSICAL",
+        "cardStatus": "ACTIVE",
+        "expiryDate": "Feb-27",
+        "searchedWith": {
+          "searchedBy": "clientName",
+          "searchTerm": "BURJ KHALIFAH TRAVEL LLC",
+          "clientId": "BKT001",
+          "cardFirstEight": "55504100",
+          "cardLastFour": "3821"
+        }
+      },
+      "expectPagesVisited": [
+        "/mivision/login",
+        "/mivision/security",
+        "/mivision/home",
+        "/mivision/accounts/BKT001/list"
+      ],
+      "expectScreenshots": [
+        "mivision-client-card-expanded"
+      ]
+    },
+    {
+      "name": "mivision_found_by_customer_number_3821",
+      "target": "mivision",
+      "requiredSimulatorScenario": "any",
+      "source": "bundle clients[BKT001] (customerNumber 088134520, clientName, aliases) and card S2/3821; MiVision search filters on clientName, customerNumber and searchAliases only (not the client id)",
+      "input": {
+        "customerNumber": "088134520",
+        "cardFirstEight": "55504100",
+        "cardLastFour": "3821"
+      },
+      "expected": {
+        "status": "FOUND",
+        "recordFound": true,
+        "notFoundParameter": null,
+        "notFoundMessage": null,
+        "notFoundReason": null,
+        "clientFound": true,
+        "clientId": "BKT001",
+        "clientName": "BURJ KHALIFAH TRAVEL LLC",
+        "customerNumber": "088134520/BKTLME088134520",
+        "programName": "BURJ KHALIFAH — UAE Corporate",
+        "programNumber": "0000110000000031741",
+        "accountNumber": "0000110000000031741",
+        "senderAuthorised": null,
+        "authorisedContacts": [
+          {
+            "name": "Jasmin Al Rashid"
+          },
+          {
+            "name": "Khalid Mansour"
+          },
+          {
+            "name": "Sara Al Hashimi"
+          }
+        ],
+        "cardFound": true,
+        "maskedCardNumber": "5550-4100-XXXX-3821",
+        "cardholderName": "Emma Carter",
+        "productType": "UAE Purchasing",
+        "cardForm": "PHYSICAL",
+        "cardStatus": "ACTIVE",
+        "expiryDate": "Feb-27",
+        "searchedWith": {
+          "searchedBy": "customerNumber",
+          "searchTerm": "088134520",
+          "cardLastFour": "3821"
+        }
+      },
+      "expectScreenshots": [
+        "mivision-client-card-expanded"
+      ]
+    },
+    {
+      "name": "mivision_s3_wrong_company_card",
+      "target": "mivision",
+      "requiredSimulatorScenario": "any",
+      "source": "docs/test-case-catalogue.md TC-03: card 4111 1111 1111 1111 is not under the client",
+      "input": {
+        "clientName": "BURJ KHALIFAH TRAVEL LLC",
+        "clientId": "BKT001",
+        "cardFirstEight": "41111111",
+        "cardLastFour": "1111"
+      },
+      "expected": {
+        "status": "NOT_FOUND",
+        "recordFound": false,
+        "notFoundParameter": "card",
+        "notFoundReason": "CARD_NOT_UNDER_CLIENT",
+        "notFoundMessage": {
+          "$contains": "1111"
+        },
+        "clientFound": true,
+        "clientId": "BKT001",
+        "cardFound": false,
+        "maskedCardNumber": null,
+        "cardholderName": null
+      },
+      "expectScreenshots": [
+        "mivision-card-not-found"
+      ]
+    },
+    {
+      "name": "mivision_unknown_client",
+      "target": "mivision",
+      "requiredSimulatorScenario": "any",
+      "source": "bundle: MiVision matches only clientName, customerNumber and searchAliases of BKT001",
+      "input": {
+        "clientName": "Zzyzx Nonexistent Holdings",
+        "cardFirstEight": "",
+        "cardLastFour": ""
+      },
+      "expected": {
+        "status": "NOT_FOUND",
+        "recordFound": false,
+        "notFoundParameter": "customer",
+        "notFoundReason": "CLIENT_NOT_FOUND",
+        "notFoundMessage": {
+          "$contains": "Zzyzx Nonexistent Holdings"
+        },
+        "clientFound": false,
+        "clientId": null,
+        "cardFound": false
+      }
+    },
+    {
+      "name": "mivision_client_id_mismatch",
+      "target": "mivision",
+      "requiredSimulatorScenario": "any",
+      "source": "name search finds BKT001, but the supplied client id ZZZ999 is not among the results",
+      "input": {
+        "clientName": "BURJ KHALIFAH TRAVEL LLC",
+        "clientId": "ZZZ999",
+        "cardFirstEight": "",
+        "cardLastFour": "3821"
+      },
+      "expected": {
+        "status": "NOT_FOUND",
+        "recordFound": false,
+        "notFoundParameter": "customer",
+        "notFoundMessage": {
+          "$contains": "ZZZ999"
+        },
+        "clientFound": false
+      }
+    },
+    {
+      "name": "echamps_cvv_s6_8801",
+      "target": "echamps",
+      "requiredSimulatorScenario": "S6",
+      "source": "bundle S6 auth row (22/06/2026 13:20:00, ...9901-8801, 620.00, 0076 INV CVV, Declined); card 8801 has no FALC so Card Info is ACTIVE-PERMANENT, no block",
+      "input": {
+        "accountNumber": "0000110000000031741",
+        "cardLastFour": "8801",
+        "transactionDate": "2026-06-22",
+        "transactionAmount": "620.00"
+      },
+      "expected": {
+        "status": "FOUND",
+        "recordFound": true,
+        "notFoundParameter": null,
+        "notFoundMessage": null,
+        "notFoundReason": null,
+        "cardStatus": "ACTIVE-PERMANENT",
+        "blockCode": "NONE",
+        "matchedTransaction": {
+          "date": "22/06/2026",
+          "time": "13:20:00",
+          "amount": 620.0,
+          "currency": "AED",
+          "finalAction": "Declined"
+        },
+        "reasonCode": "0076",
+        "reasonDescription": "INV CVV",
+        "reasonCodeRaw": "0076 - INV CVV",
+        "searchedWith": {
+          "accountNumber": "0000110000000031741",
+          "cardLastFour": "8801",
+          "transactionDate": "22/06/2026",
+          "transactionAmount": "620.00"
+        }
+      },
+      "expectScreenshots": [
+        "echamps-auth-table"
+      ]
+    },
+    {
+      "name": "echamps_fraud_s2_3821",
+      "target": "echamps",
+      "requiredSimulatorScenario": "S2",
+      "source": "bundle S2 auth row (01/07/2026 22:14:01, ...9901-3821, 2,150.00, 0713 FALC DECL, Declined); card 3821 has a FALC unposted decline so Card Info is ACTIVE-FRAUD BLOCKED / F",
+      "input": {
+        "accountNumber": "0000110000000031741",
+        "cardLastFour": "3821",
+        "transactionDate": "2026-07-01",
+        "transactionAmount": "2150.00"
+      },
+      "expected": {
+        "status": "FOUND",
+        "recordFound": true,
+        "notFoundParameter": null,
+        "notFoundMessage": null,
+        "notFoundReason": null,
+        "cardStatus": "ACTIVE-FRAUD BLOCKED",
+        "blockCode": "F",
+        "matchedTransaction": {
+          "date": "01/07/2026",
+          "time": "22:14:01",
+          "amount": 2150.0,
+          "currency": "AED",
+          "finalAction": "Declined"
+        },
+        "reasonCode": "0713",
+        "reasonDescription": "FALC DECL",
+        "reasonCodeRaw": "0713 - FALC DECL"
+      },
+      "expectScreenshots": [
+        "echamps-auth-table"
+      ]
+    },
+    {
+      "name": "echamps_wrong_scenario_no_matching_auth",
+      "target": "echamps",
+      "requiredSimulatorScenario": "any",
+      "note": "Uses the CVV inputs (8801, 22/06/2026, 620.00). Gives NO_MATCHING_AUTH in every scenario except S6, so do not leave S6 selected when running this case.",
+      "source": "docs/rpa-task-mapping.md mismatch 3; bundle: only S6 has an auth row for card 8801",
+      "input": {
+        "accountNumber": "0000110000000031741",
+        "cardLastFour": "8801",
+        "transactionDate": "2026-06-22",
+        "transactionAmount": "620.00"
+      },
+      "expected": {
+        "status": "NOT_FOUND",
+        "recordFound": false,
+        "notFoundParameter": "transaction",
+        "notFoundReason": "NO_MATCHING_AUTH",
+        "notFoundMessage": {
+          "$contains": "8801"
+        },
+        "matchedTransaction": null,
+        "reasonCode": null,
+        "reasonCodeRaw": null
+      }
+    },
+    {
+      "name": "echamps_unknown_card_not_found",
+      "target": "echamps",
+      "requiredSimulatorScenario": "any",
+      "source": "bundle: account list holds cards 9155,3821,7404,2290,4412,8801,1040,2271,6614 only",
+      "input": {
+        "accountNumber": "0000110000000031741",
+        "cardLastFour": "0000",
+        "transactionDate": "",
+        "transactionAmount": ""
+      },
+      "expected": {
+        "status": "NOT_FOUND",
+        "recordFound": false,
+        "notFoundParameter": "card",
+        "notFoundReason": "CARD_NOT_FOUND",
+        "notFoundMessage": {
+          "$contains": "0000"
+        },
+        "matchedTransaction": null,
+        "reasonCode": null
+      }
+    },
+    {
+      "name": "echamps_bad_account_no_incident",
+      "target": "echamps",
+      "requiredSimulatorScenario": "any",
+      "note": "Expected to FAIL against the current simulator: eChamps ignores the account number (/echamps/overview/:acct always lists the same cards), so a bad account cannot be detected.",
+      "source": "account 9999999999999999999 does not exist in the simulator",
+      "input": {
+        "accountNumber": "9999999999999999999",
+        "cardLastFour": "8801",
+        "transactionDate": "",
+        "transactionAmount": ""
+      },
+      "expected": {
+        "status": [
+          "NOT_FOUND",
+          "ERROR"
+        ],
+        "recordFound": false,
+        "notFoundParameter": [
+          "account",
+          "card"
+        ],
+        "matchedTransaction": null,
+        "reasonCode": null
+      }
+    },
+    {
+      "name": "chain_dqm_mivision_echamps",
+      "requiredSimulatorScenario": "any",
+      "note": "Identifiers flow DQM -> MiVision -> eChamps. The eChamps step only asserts that the chained account and card arrived (its outcome depends on the selected scenario).",
+      "source": "CVV01 story: sender sara@burjkhalifahtravel.ae, card 5550410099018801",
+      "steps": [
+        {
+          "target": "dqm",
+          "input": {
+            "senderEmail": "sara@burjkhalifahtravel.ae"
+          },
+          "expected": {
+            "status": "FOUND",
+            "clientId": "BKT001",
+            "clientName": "BURJ KHALIFAH TRAVEL LLC",
+            "senderIsAuthorisedContact": true
+          }
+        },
+        {
+          "target": "mivision",
+          "input": {
+            "clientName": "$dqm.clientName",
+            "clientId": "$dqm.clientId",
+            "cardFirstEight": "55504100",
+            "cardLastFour": "8801"
+          },
+          "expected": {
+            "status": "FOUND",
+            "clientFound": true,
+            "clientId": "BKT001",
+            "cardFound": true,
+            "maskedCardNumber": "5550-4100-XXXX-8801",
+            "cardholderName": "Omar Mahmoud Al Tahir",
+            "accountNumber": "0000110000000031741"
+          }
+        },
+        {
+          "target": "echamps",
+          "input": {
+            "accountNumber": "$mivision.accountNumber",
+            "cardLastFour": "8801",
+            "transactionDate": "2026-06-22",
+            "transactionAmount": "620.00"
+          },
+          "expected": {
+            "status": [
+              "FOUND",
+              "NOT_FOUND"
+            ],
+            "searchedWith": {
+              "accountNumber": "0000110000000031741",
+              "cardLastFour": "8801"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "chain_dqm_mivision_echamps_s6",
+      "requiredSimulatorScenario": "S6",
+      "source": "as above, with the CVV decline visible",
+      "steps": [
+        {
+          "target": "dqm",
+          "input": {
+            "senderEmail": "sara@burjkhalifahtravel.ae"
+          },
+          "expected": {
+            "status": "FOUND",
+            "clientId": "BKT001",
+            "senderIsAuthorisedContact": true
+          }
+        },
+        {
+          "target": "mivision",
+          "input": {
+            "clientName": "$dqm.clientName",
+            "clientId": "$dqm.clientId",
+            "cardFirstEight": "55504100",
+            "cardLastFour": "8801"
+          },
+          "expected": {
+            "status": "FOUND",
+            "cardFound": true,
+            "accountNumber": "0000110000000031741"
+          }
+        },
+        {
+          "target": "echamps",
+          "input": {
+            "accountNumber": "$mivision.accountNumber",
+            "cardLastFour": "8801",
+            "transactionDate": "2026-06-22",
+            "transactionAmount": "620.00"
+          },
+          "expected": {
+            "status": "FOUND",
+            "recordFound": true,
+            "notFoundParameter": null,
+            "notFoundMessage": null,
+            "notFoundReason": null,
+            "cardStatus": "ACTIVE-PERMANENT",
+            "blockCode": "NONE",
+            "matchedTransaction": {
+              "date": "22/06/2026",
+              "time": "13:20:00",
+              "amount": 620.0,
+              "currency": "AED",
+              "finalAction": "Declined"
+            },
+            "reasonCode": "0076",
+            "reasonDescription": "INV CVV",
+            "reasonCodeRaw": "0076 - INV CVV"
+          }
+        }
+      ]
+    }
+  ]
+}

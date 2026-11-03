@@ -1,0 +1,2696 @@
+{
+ "suite": "expressions",
+ "counts": {
+  "PASS": 533,
+  "FAIL": 0,
+  "WARN": 4,
+  "SKIP": 0
+ },
+ "rows": [
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-customer-communication.bpmn/Flow_Purpose_Ok [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-customer-communication.bpmn/Flow_NeedsMentor_Yes [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-customer-communication.bpmn/Flow_Next_Send [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-customer-communication.bpmn/Flow_Next_Redraft [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-customer-communication.bpmn/Flow_Next_Cancel [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-decline-fraud-alert.bpmn/Flow_Review_Yes [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_RouteClarification [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_RouteIncorrectCvv [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_RouteFraudAlert [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_RouteLocateRecord [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_EndResolved [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_EndWaitingCustomer [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_EndWaitingFraud [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_EndOutOfScope [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_CapReached [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_ClarificationSentToWait [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_ReplyVerified [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-declined-transaction-triage.bpmn/Flow_EndNoResponse [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "matrix hsbc-transaction-triage-agent.bpmn/Flow_NotFoundYes [condition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_PurposeSupported :: SENDER",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_PurposeSupported :: AUTHORISED_CONTACT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_PurposeSupported :: FRAUD_TEAM",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_PurposeSupported :: NONE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_PurposeSupported :: null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NeedsMentor :: flag true, body present",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NeedsMentor :: flag false, body present",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NeedsMentor :: flag false, empty body forces mentor",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NeedsMentor :: flag false, null body forces mentor",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NeedsMentor :: flag false, null draft forces mentor",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NeedsMentor :: flag null is fail-closed (hardening)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NextAction :: SEND",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NextAction :: REDRAFT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NextAction :: CANCEL",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NextAction :: ESCALATE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NextAction :: null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-customer-communication.bpmn/Gateway_NextAction :: unknown",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-decline-fraud-alert.bpmn/Gateway_NeedsHumanReview :: true",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-decline-fraud-alert.bpmn/Gateway_NeedsHumanReview :: false",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-decline-fraud-alert.bpmn/Gateway_NeedsHumanReview :: null is fail-closed (hardening)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: clarif MISSING_CARD_DETAILS",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: clarif INVALID_CARD_NUMBER",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: clarif MISSING_REQUIRED_DATA",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: clarif CARD_COMPANY_MISMATCH",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: clarif UNAUTHORISED_SENDER",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: clarif REQUEST_COMPLETE_DETAILS",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: INCORRECT_CVV",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: FRAUD_ALERT",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: RECORD_NOT_FOUND_ESCALATION",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: escalation UNCLASSIFIED_ESCALATION",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: escalation OUT_OF_SCOPE_ESCALATION",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: escalation RPA_FAILURE_ESCALATION",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: escalation None",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_TriageRoute :: escalation BOGUS",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_EndState :: RESOLVED",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_EndState :: WAITING_FOR_CUSTOMER",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_EndState :: WAITING_FOR_FRAUD_TEAM",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_EndState :: OUT_OF_SCOPE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_EndState :: CLOSED_NO_RESPONSE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_EndState :: ESCALATED -> default",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_EndState :: null -> default",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_EndState :: unknown -> default",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: clarif, prior 2 max 2 -> cap",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: clarif, prior 3 max 2 -> cap",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: unauthorised sender at cap",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: clarif, prior 1 max 2 -> continue",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: prior null counts as 0",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: max null defaults to 2",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: both null -> continue",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: non-clarification route never capped",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: fraud route never capped",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_FollowUpCap :: route null -> continue",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_ClarificationSent :: sent and waiting",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_ClarificationSent :: sent but resolved",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_ClarificationSent :: not sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_ClarificationSent :: null sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_ClarificationSent :: null status",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_ReplySenderVerified :: verified",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_ReplySenderVerified :: unverified",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-declined-transaction-triage.bpmn/Gateway_ReplySenderVerified :: null -> unverified (fail closed)",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-transaction-triage-agent.bpmn/Gateway_RecordNotFound :: RECORD_NOT_FOUND",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-transaction-triage-agent.bpmn/Gateway_RecordNotFound :: INCORRECT_CVV",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "route hsbc-transaction-triage-agent.bpmn/Gateway_RecordNotFound :: null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:activationCondition] :: new case mail",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:activationCondition] :: tag lower case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:activationCondition] :: headers null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:activationCondition] :: reply (In-Reply-To) is not new",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:activationCondition] :: customer reply tag excluded",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:activationCondition] :: fraud tag excluded",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:activationCondition] :: no tag",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:activationCondition] :: null subject",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Catch_CustomerReply [property:activationCondition] :: reply",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Catch_CustomerReply [property:activationCondition] :: reply lower case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Catch_CustomerReply [property:activationCondition] :: fraud mail is not a customer reply",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Catch_CustomerReply [property:activationCondition] :: both tags -> fraud wins",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Catch_CustomerReply [property:activationCondition] :: no tag",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Catch_CustomerReply [property:activationCondition] :: null subject",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Catch_CustomerReply [property:correlationKeyExpression] :: plain",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Catch_CustomerReply [property:correlationKeyExpression] :: lower case tag",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Catch_FraudTeamResponse [property:activationCondition] :: fraud reply",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Catch_FraudTeamResponse [property:activationCondition] :: lower case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Catch_FraudTeamResponse [property:activationCondition] :: customer tag",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Catch_FraudTeamResponse [property:activationCondition] :: null subject",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Catch_FraudTeamResponse [property:correlationKeyExpression] :: maps FRD digits to the caseId",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Catch_FraudTeamResponse [property:correlationKeyExpression] :: lower case",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:messageIdExpression] :: header present",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/StartEvent_EmailReceived [property:messageIdExpression] :: header absent falls back",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Transaction_Triage_Agent/ValidateCardNumber [script:toolCallResult] :: 16 digits with spaces",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Transaction_Triage_Agent/ValidateCardNumber [script:toolCallResult] :: 15 digits",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Transaction_Triage_Agent/ValidateCardNumber [script:toolCallResult] :: 17 digits",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Transaction_Triage_Agent/ValidateCardNumber [script:toolCallResult] :: masked",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Transaction_Triage_Agent/ValidateCardNumber [script:toolCallResult] :: null",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Transaction_Triage_Agent/ValidateCardNumber [script:toolCallResult] :: empty",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Task_RecordOutcome [script:caseOutcome] :: met",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Task_RecordOutcome [script:caseOutcome] :: breached",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Task_RecordOutcome [script:caseOutcome] :: no due date",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Task_MarkEscalated [script:caseStatus] :: out of scope route",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Task_MarkEscalated [script:caseStatus] :: other route",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Task_MarkEscalated [script:caseStatus] :: keeps OUT_OF_SCOPE",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Task_MergeCustomerReply [script:replyMerge] :: quoted history stripped",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Task_MergeCustomerReply [script:replyMerge] :: from as list with display name",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Commercial_Cards_Declined_Transaction_Triage/Task_MergeCustomerReply [script:replyMerge] :: null reply tolerated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_ResolveRecipient [script:recipient] :: sender",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_ResolveRecipient [script:recipient] :: authorised contact",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_ResolveRecipient [script:recipient] :: fraud team",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_BuildDraftSubject [script:communicationDraft] :: customer tag is the caseId",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_BuildDraftSubject [script:communicationDraft] :: fraud team gets the FRD tag",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_BuildDraftSubject [script:communicationDraft] :: no model draft -> null body",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_FlagMentorSlaBreach [script:mentorSlaUpdate] :: flags",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_IncrementRework [script:reworkUpdate] :: 0 -> 1",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_IncrementRework [script:reworkUpdate] :: 2 -> 3",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_RecordCommunication [script:communicationResult] :: sent",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_RecordCancellation [script:cancellationResult] :: cancelled",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Customer_Communication/Task_RecordEscalation [script:escalationResult] :: escalated",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Task_NormaliseFraudInterpretation [script:fraudNormalised] :: clean",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Task_NormaliseFraudInterpretation [script:fraudNormalised] :: confidence as string",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Task_NormaliseFraudInterpretation [script:fraudNormalised] :: null interpretation -> UNCLEAR/0",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "value HSBC_Decline_Fraud_Alert/Task_NormaliseFraudInterpretation [script:fraudNormalised] :: null decision -> UNCLEAR",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/BRT_CustomerResponseType [input:communicationPurpose]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/BRT_CustomerResponseType [output:responseType]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/BRT_CustomerResponseType [output:recipientType]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/BRT_CustomerResponseType [output:messageGuidance]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/BRT_CustomerResponseType [output:requiresMentorApproval]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/BRT_CustomerResponseType [output:caseStatusAfterSend]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordUnsupportedPurpose [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordUnsupportedPurpose [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordUnsupportedPurpose [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordUnsupportedPurpose [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordUnsupportedPurpose [script:unsupportedResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_ResolveRecipient [output:recipientEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_ResolveRecipient [output:recipientName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_ResolveRecipient [script:recipient]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_DraftCommunication [input:provider.bedrock.model.model]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_DraftCommunication [input:provider.bedrock.model.parameters.maxTokens]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_DraftCommunication [input:data.systemPrompt.prompt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_DraftCommunication [input:data.userPrompt.prompt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_DraftCommunication [input:data.context]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_DraftCommunication [input:data.memory.contextWindowSize]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_DraftCommunication [input:data.limits.maxModelCalls]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_DraftCommunication [input:data.response.includeAssistantMessage]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_DraftCommunication [header:resultExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/UserTask_MentorApproval [input:maskedCardNumber]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/UserTask_MentorApproval [input:transactionDate]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/UserTask_MentorApproval [input:transactionAmount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/UserTask_MentorApproval [input:transactionCurrency]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/UserTask_MentorApproval [input:merchantName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/UserTask_MentorApproval [input:approvedSubject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/UserTask_MentorApproval [input:approvedBody]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/UserTask_MentorApproval [output:mentorApproval]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/TimerDef_MentorSla [timer:timeDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_FlagMentorSlaBreach [output:slaStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_FlagMentorSlaBreach [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_FlagMentorSlaBreach [script:mentorSlaUpdate]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/BRT_MentorApprovalDecision [input:mentorDecision]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/BRT_MentorApprovalDecision [input:reworkCount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/BRT_MentorApprovalDecision [input:maxRework]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_ResolveFinalMessage [script:approvedCommunication]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_SendEmail [input:data.smtpAction.to]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_SendEmail [input:data.smtpAction.subject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_SendEmail [input:data.smtpAction.body]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCommunication [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCommunication [output:sentAt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCommunication [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCommunication [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCommunication [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCommunication [script:communicationResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_IncrementRework [output:reworkCount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_IncrementRework [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_IncrementRework [script:reworkUpdate]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordEscalation [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordEscalation [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordEscalation [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordEscalation [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordEscalation [script:escalationResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCancellation [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCancellation [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCancellation [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCancellation [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_RecordCancellation [script:cancellationResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-customer-communication.bpmn/Task_BuildDraftSubject [script:communicationDraft]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_RecordFraudEvidence [script:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:caseId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:triageFacts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:senderEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:senderName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:emailSubject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:messageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:fraudTeamEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:mentorSlaDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:llmModelId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:demoEmailRedirect]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:communicationPurpose]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [input:reworkCount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [output:mentorApproval]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [output:approvedCommunication]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_NotifyFraudTeam [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/TimerDef_FraudTeamSla [timer:timeDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ChaseFraudTeam [input:inAuditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ChaseFraudTeam [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_InterpretFraudReply [input:provider.bedrock.model.model]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_InterpretFraudReply [input:provider.bedrock.model.parameters.maxTokens]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_InterpretFraudReply [input:data.systemPrompt.prompt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_InterpretFraudReply [input:data.userPrompt.prompt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_InterpretFraudReply [input:data.context]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_InterpretFraudReply [input:data.memory.contextWindowSize]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_InterpretFraudReply [input:data.limits.maxModelCalls]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_InterpretFraudReply [input:data.response.includeAssistantMessage]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_InterpretFraudReply [header:resultExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_NormaliseFraudInterpretation [output:fraudTeamDecision]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_NormaliseFraudInterpretation [output:interpretationConfidence]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_NormaliseFraudInterpretation [output:aiInterpretationConfidence]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_NormaliseFraudInterpretation [output:fraudTeamSummary]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Task_NormaliseFraudInterpretation [script:fraudNormalised]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/BRT_FraudManagementOutcome [input:fraudTeamDecision]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/BRT_FraudManagementOutcome [input:interpretationConfidence]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/BRT_FraudManagementOutcome [output:communicationPurpose]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/BRT_FraudManagementOutcome [output:needsHumanReview]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [input:aiFraudTeamDecision]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [input:aiInterpretationConfidence]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [input:inAiConfidence]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [input:inAuditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [input:maskedCardNumber]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [input:fraudTeamDecision]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [output:fraudTeamDecision]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [output:interpretationConfidence]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/UserTask_ReviewFraudResponse [output:fraudReviewNotes]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:caseId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:triageFacts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:senderEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:senderName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:emailSubject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:messageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:fraudTeamEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:mentorSlaDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:llmModelId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:demoEmailRedirect]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:communicationPurpose]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:reworkCount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [input:fraudTeamSummary]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [output:mentorApproval]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [output:approvedCommunication]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/CallActivity_FraudOutcomeToCustomer [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Catch_FraudTeamResponse [property:activationCondition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Catch_FraudTeamResponse [property:correlationKeyExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Catch_FraudTeamResponse [property:messageIdExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-fraud-alert.bpmn/Catch_FraudTeamResponse [property:resultExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/Task_RecordCvvEvidence [script:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:caseId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:triageFacts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:senderEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:senderName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:emailSubject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:messageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:fraudTeamEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:mentorSlaDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:llmModelId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:demoEmailRedirect]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:communicationPurpose]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [input:reworkCount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [output:mentorApproval]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [output:approvedCommunication]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-decline-incorrect-cvv.bpmn/CallActivity_CvvAdvice [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [script:caseInit]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:caseId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:senderEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:senderName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:emailSubject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:emailBody]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:messageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:receivedAt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:caseSource]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:fraudTeamEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:firstResponseSla]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:mentorSlaDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:fraudTeamSlaDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:llmModelId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:priorFollowUps]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:customerReplySla]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:maxFollowUps]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:demoEmailRedirect]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:simulatorScenario]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:emailAttachments]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:scanMessageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:firstResponseAt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:replyFrom]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:replySenderVerified]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:slaFirstResponseDue]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_InitialiseCase [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_ExtractInlineImages [jobType:type]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_ExtractInlineImages [input:scanMessageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_ExtractInlineImages [output:emailAttachments]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_ExtractInlineImages [output:inlineImageResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_ExtractInlineImages [output:scanMessageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:caseId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:senderEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:senderName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:emailSubject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:emailBody]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:receivedAt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:llmModelId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:priorFollowUps]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:simulatorScenario]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [input:emailAttachments]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:triageRoute]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:routeReason]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:triageFacts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:dqmResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:mivisionResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:notFoundAction]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:notFoundGuidance]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:echampsResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:triageAgentOutput]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:missingFields]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:scenario]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Triage [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:caseId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:senderEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:senderName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:emailSubject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:messageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:fraudTeamEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:mentorSlaDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:llmModelId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:demoEmailRedirect]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:communicationPurpose]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:notFoundGuidance]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:searchedWith]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:clarifyingQuestions]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:reworkCount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:missingFields]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [input:triageFacts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [output:mentorApproval]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_Clarification [output:approvedCommunication]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:caseId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:triageFacts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:senderEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:senderName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:emailSubject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:messageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:fraudTeamEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:mentorSlaDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:demoEmailRedirect]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [input:llmModelId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_IncorrectCVV [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:caseId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:triageFacts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:senderEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:senderName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:emailSubject]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:messageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:fraudTeamEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:mentorSlaDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:llmModelId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:demoEmailRedirect]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [input:fraudTeamSlaDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [output:communicationSent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [output:communicationOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [output:fraudTeamDecision]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/CallActivity_FraudAlert [output:fraudTeamSummary]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/UserTask_HandleEscalation [input:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/UserTask_HandleEscalation [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/UserTask_HandleEscalation [output:escalationNotes]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MarkEscalated [script:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/UserTask_LocateRecord [input:locateSearchedWith]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/UserTask_LocateRecord [input:locateReason]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/UserTask_LocateRecord [input:locateEvidence]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/UserTask_LocateRecord [input:locateGuidance]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/UserTask_LocateRecord [output:locateOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/UserTask_LocateRecord [output:locateNotes]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordLocateOutcome [script:locateRecord]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordLocateOutcome [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordLocateOutcome [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordOutcome [script:caseOutcome]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordOutcome [output:closedAt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordOutcome [output:slaStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordOutcome [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/StartEvent_EmailReceived [property:activationCondition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/StartEvent_EmailReceived [property:messageIdExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/StartEvent_EmailReceived [property:resultExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_PrepareFollowUpEscalation [script:followUpEscalation]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_PrepareFollowUpEscalation [output:routeReason]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_PrepareFollowUpEscalation [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MarkAwaitingReply [script:awaitReply]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MarkAwaitingReply [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MarkAwaitingReply [output:firstResponseAt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MarkAwaitingReply [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/TimerDef_CustomerReplySla [timer:timeDuration]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordNoResponse [script:noResponse]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordNoResponse [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_RecordNoResponse [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MergeCustomerReply [script:replyMerge]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MergeCustomerReply [output:priorFollowUps]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MergeCustomerReply [output:emailBody]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MergeCustomerReply [output:replyFrom]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MergeCustomerReply [output:replySenderVerified]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MergeCustomerReply [output:emailAttachments]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MergeCustomerReply [output:scanMessageId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MergeCustomerReply [output:caseStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Task_MergeCustomerReply [output:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Catch_CustomerReply [property:activationCondition]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Catch_CustomerReply [property:correlationKeyExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Catch_CustomerReply [property:messageIdExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-declined-transaction-triage.bpmn/Catch_CustomerReply [property:resultExpression]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_InitTriageScope [script:triageStartedAt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_InitTriageScope [output:mivisionResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_InitTriageScope [output:echampsResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_InitTriageScope [output:dqmResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_InitTriageScope [output:notFoundAction]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_InitTriageScope [output:notFoundGuidance]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_InitTriageScope [output:triageStartedAt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:provider.bedrock.model.model]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:provider.bedrock.model.parameters.maxTokens]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:data.systemPrompt.prompt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:data.userPrompt.prompt]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:data.userPrompt.documents]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:data.memory.contextWindowSize]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:data.limits.maxModelCalls]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:data.response.format.parseJson]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:data.response.includeAssistantMessage]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [input:data.response.includeAgentContext]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [output:agent]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/TriageAgent [adhoc:outputElement]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupDqmCustomer [jobType:type]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupDqmCustomer [input:simulatorScenario]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupDqmCustomer [input:senderEmail]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupDqmCustomer [input:companyName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupDqmCustomer [input:caseNumber]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupDqmCustomer [output:dqmResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupDqmCustomer [output:toolCallResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/ValidateCardNumber [input:inCardNumber]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/ValidateCardNumber [script:toolCallResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupMiVisionClientCard [jobType:type]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupMiVisionClientCard [input:simulatorScenario]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupMiVisionClientCard [input:customerNumber]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupMiVisionClientCard [input:clientId]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupMiVisionClientCard [input:clientName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupMiVisionClientCard [input:cardFirstEight]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupMiVisionClientCard [input:cardLastFour]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupMiVisionClientCard [output:mivisionResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/LookupMiVisionClientCard [output:toolCallResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/InvestigateEChampsDecline [jobType:type]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/InvestigateEChampsDecline [input:simulatorScenario]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/InvestigateEChampsDecline [input:accountNumber]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/InvestigateEChampsDecline [input:cardLastFour]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/InvestigateEChampsDecline [input:transactionDate]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/InvestigateEChampsDecline [input:transactionAmount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/InvestigateEChampsDecline [output:echampsResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/InvestigateEChampsDecline [output:toolCallResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_ExtractToolResults [script:triageAgentExtract]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_ExtractToolResults [output:dqmResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_ExtractToolResults [output:mivisionResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_ExtractToolResults [output:lookupAttempts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_ExtractToolResults [output:echampsResult]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_ExtractToolResults [output:triageAgentOutput]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_ExtractToolResults [output:agentOutputParsed]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_ExtractToolResults [output:toolsCalledActual]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_ExtractToolResults [output:triageAgentResponseText]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_NormaliseFacts [script:triageFacts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RequiredTriageFields [input:transactionDate]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RequiredTriageFields [input:transactionAmount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RequiredTriageFields [input:merchantName]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RequiredTriageFields [output:missingFields]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_DeclineReasonToScenario [input:declineReasonCode]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_DeclineReasonToScenario [output:scenario]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_DeclineReasonToScenario [output:scenarioLabel]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:rpaStatus]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:clientFound]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:senderAuthorised]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:cardNumberLength]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:requestCount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:missingFieldCount]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:cardFound]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:scenario]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:declineReasonCode]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:notFoundReason]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [input:recordNotFound]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [output:triageRoute]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_TriageRouting [output:routeReason]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RecordNotFoundAction [input:notFoundReason]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RecordNotFoundAction [input:detailsComplete]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RecordNotFoundAction [input:lookupAttempts]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RecordNotFoundAction [input:priorFollowUps]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RecordNotFoundAction [output:notFoundAction]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RecordNotFoundAction [output:notFoundGuidance]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RecordNotFoundAction [output:triageRoute]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/BRT_RecordNotFoundAction [output:routeReason]",
+   "msg": ""
+  },
+  {
+   "status": "PASS",
+   "id": "smoke hsbc-transaction-triage-agent.bpmn/Task_AuditTriage [script:auditTrail]",
+   "msg": ""
+  },
+  {
+   "status": "WARN",
+   "id": "unresolved variable attachments",
+   "msg": "read by Catch_CustomerReply, StartEvent_EmailReceived but not in the case baseline and never mapped by a model"
+  },
+  {
+   "status": "WARN",
+   "id": "unresolved variable camundaRpaWorkerLabel",
+   "msg": "read by InvestigateEChampsDecline, LookupDqmCustomer, LookupMiVisionClientCard, Task_ExtractInlineImages but not in the case baseline and never mapped by a model"
+  },
+  {
+   "status": "WARN",
+   "id": "unresolved variable inlineImages",
+   "msg": "read by Task_ExtractInlineImages but not in the case baseline and never mapped by a model"
+  },
+  {
+   "status": "WARN",
+   "id": "unresolved variable item",
+   "msg": "read by TriageAgent but not in the case baseline and never mapped by a model"
+  }
+ ]
+}
